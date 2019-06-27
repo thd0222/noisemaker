@@ -9,9 +9,9 @@ parser.add_argument('--dst', type=str,
 
 parser.add_argument('--method', type=str,
                     help='method of noising. {salt_and_pepper, gaussian}')
-parser.add_argument('--p', type=float, default=0.05,
+parser.add_argument('--p', type=float, default=0.01,
                     help='probability of salt and pepper noise.')
-parser.add_argument('--var', type=float, default=10/255.,
+parser.add_argument('--var', type=float, default=10,
                     help='variance of gaussian noise.')
 
 args = parser.parse_args()
